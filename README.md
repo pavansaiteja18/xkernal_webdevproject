@@ -1,2 +1,3 @@
-xkernal club assigned me to do a webpage of resume template 
+link of website hosted on github-
+https://pavansaiteja18.github.io/xkernal_webdevproject/
 
