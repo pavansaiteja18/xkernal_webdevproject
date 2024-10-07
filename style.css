@@ -1,0 +1,242 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.resume-container {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left-section {
+    background-color: #1a3b5d;
+    color: white;
+    padding: 30px 20px;
+    width: 35%;
+    text-align: center;
+    position: relative;
+    border-right: 2px solid #ccc; 
+}
+
+.left-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.left-section h2::after {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 2px;
+    background-color: white;
+    margin: 8px auto;
+}
+
+.left-section p,
+.left-section ul {
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.left-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+
+.left-section .contact,
+.left-section .education,
+.left-section .skills,
+.left-section .languages {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Add horizontal lines between sections */
+}
+
+.left-section a {
+    color: white;
+    text-decoration: none;
+}
+
+.left-section a:hover {
+    text-decoration: underline;
+}
+
+.profile-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.profile-image img {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.right-section {
+    padding: 30px;
+    width: 65%;
+}
+
+.right-section h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1a3b5d;
+    margin-bottom: 5px;
+}
+
+.right-section h2 {
+    font-size: 1.0rem;
+    color: #1a3b5d;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.right-section p {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.company-name {
+    font-weight: bold;
+    color: #1a3b5d;
+    font-size: 1rem;
+}
+
+.date-range {
+    font-size: 0.85rem;
+    color: gray;
+    margin-bottom: 12px;
+}
+
+.experience {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.experience-item {
+    margin-bottom: 30px;
+    position: relative;
+    padding-left: 40px;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    top: 10px; 
+    left: 0;
+    width: 8px;
+    height: 8px; 
+    border-radius: 50%;
+    background-color: #1a3b5d;
+    z-index: 1; 
+}
+
+.experience::before {
+    content: '';
+    position: absolute;
+    top: 10px; 
+    left: 23px; 
+    width: 2px; 
+    height: calc(100% - 40px); 
+    background-color: #1a3b5d; 
+    z-index: 0; 
+}
+
+/* Profile Name Styles */
+.first-name {
+    font-size: 2.0rem;
+    color: #1a3b5d;
+    font-weight: bolder;
+}
+
+.last-name {
+    color: #020202;
+}
+
+/* Skills and Education Sections */
+.left-section .skills,
+.left-section .education,
+.left-section .languages {
+    margin-bottom: 30px;
+}
+
+.left-section .skills ul,
+.left-section .languages p {
+    font-size: 0.9rem;
+}
+
+/* Mobile Responsive */
+.experience-1{
+    font-weight: bold;
+    right:  40px;
+}
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .left-section {
+        width: 100%;
+        text-align: center;
+        border-right: none;
+    }
+
+    .right-section {
+        width: 100%;
+    }
+
+    .profile-image img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .right-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .right-section h2 {
+        font-size: 1rem;
+    }
+}
+
+.github-link {
+    color: white;
+    font-size: 5px;
+}
+.profile{
+    color:#1a3b5d;
+}
+.title{
+    font-size: 20px;
+    font-weight: bolder;
+}
